@@ -1,7 +1,9 @@
-# Doonie Watch Data Analysis Project
+# Doonie Watch Data Analysis
+Note: All metrics, data structures, and reporting frameworks belonging to the Doonie Watch brand have been authorized for public professional presentation via written consent by the business owner.
 
 ## 1. Background and Overview
-I was hired by the owner of Doonie Watch, a specialized watch retailer on Shopee, to analyze their sales data, evaluate business performance, and uncover actionable insights to optimize their operations. The objective was to transform raw Shopee data into an interactive and comprehensive Power BI dashboard. By examining key metrics such as customer demographics, product performance, profit & loss, and operational risks, this project provides data-driven strategies to increase revenue, reduce costs, and mitigate return/cancellation risks. The data used in this report has been authorized for public use by the shop owner.
+- **Business Context:** Retained as an independent data consultant (outsource) by the owner of Doonie Watch during a phase of rapid growth on Shopee. The business faced a critical 'raw data crisis': cash flow transparency was obscured, operational overhead (particularly ad spend) was soaring, and order cancellations spiked at 24.06% due to fragmented, unstructured data exported from the e-commerce platform.
+- **Goal:** Restructured the data storage environment into a centralized relational system, transforming raw files into a suite of 4 automated management dashboards. This enabled the executive team to make precise, immediate strategic interventions.
 
 ## 2. Data Structure
 
@@ -10,21 +12,25 @@ The following flowchart illustrates the data pipeline from raw Shopee data to th
 
 ```mermaid
 graph LR
-    A[Shopee Raw Data] --> B(Automatic Data Ingestion)
+    A[Shopee Raw Data] --> B(Automatic Data Ingestion Using Python)
     B --> C[(Database)]
     C --> D[Data Modeling Dim, Fact]
     D --> E[Data Exploration]
-    E --> F[Interactive Dashboard Power BI / DAX]
     
-    F --> F1[Product Performance]
-    F --> F2[Customer Segment]
-    F --> F3[Profit & Loss]
-    F --> F4[Operation Risk]
+    E --> E1[Product Performance]
+    E --> E2[Customer Segment]
+    E --> E3[Profit & Loss]
+    E --> E4[Operation Risk]
+
+    E1 --> F[Interactive Dashboard Power BI / DAX]
+    E2 --> F[Interactive Dashboard Power BI / DAX]
+    E3 --> F[Interactive Dashboard Power BI / DAX]
+    E4 --> F[Interactive Dashboard Power BI / DAX]
     
-    F1 --> G1[Increase Revenue]
-    F3 --> G2[Increase Profit]
-    F4 --> G3[Reduce Cost]
-    F4 --> G4[Reduce Risk]
+    F --> G1[Increase Revenue]
+    F --> G2[Increase Profit]
+    F --> G3[Reduce Cost]
+    F --> G4[Reduce Risk]
 ```
 
 ### Database Diagram
