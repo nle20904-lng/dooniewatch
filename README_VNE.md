@@ -69,19 +69,53 @@ Tôi tham gia dự án với vai trò **Freelance Data Consultant** ở cả hai
 ## 2.1 Tổng quan Data Pipeline
 
 ```text
+```text
 Shopee Raw Exports (Excel)
           │
           ▼
   Python Ingestion Script
+  ├── pandas: parse & normalize dữ liệu
+  ├── openpyxl: đọc file Excel (.xlsx)
+  └── sqlalchemy: load dữ liệu vào PostgreSQL
           │
           ▼
-  PostgreSQL (root_data schema)
+  PostgreSQL — schema root_data (staging layer)
+  ├── root_data.order_all
+  │      ← lưu dữ liệu đơn hàng thô từ Shopee
+  │
+  ├── root_data.orders
+  │      ← dữ liệu đơn hàng đã deduplicate & upsert
+  │
+  ├── root_data.product_all
+  │      ← dữ liệu performance sản phẩm thô
+  │
+  ├── root_data.product_performance
+  │      ← dữ liệu performance đã làm sạch & merge
+  │
+  ├── root_data.sanpham
+  │      ← master data sản phẩm (manual mapping)
+  │
+  ├── root_data.phanloai
+  │      ← master data variants/phân loại
+  │
+  └── root_data.campaign
+         ← dữ liệu chiến dịch quảng cáo
           │
           ▼
-  3 Stored Procedures
+  3 Stored Procedures (schema stg)
+  ├── prc_update_status_fact_txn_orders
+  │      ← Bước 1: upsert & đồng bộ dữ liệu raw
+  │
+  ├── prc_insert_dim_tables
+  │      ← Bước 2: build toàn bộ dimension tables
+  │
+  └── prc_insert_fact_tables
+         ← Bước 3: tính toán toàn bộ fact tables
           │
           ▼
   Power BI (Import Mode)
+  ├── DAX custom measures
+  └── 4 Interactive Dashboards
 ```
 
 ---
