@@ -131,7 +131,7 @@ Before building the database, raw exports were profiled to understand structure,
 
 ### 2.3 Data Organization & Star Schema Design
 
-**Output Data Dictionary →** [`Doonie_Watch_Analytics_Projects_NLE/data_dictionary/data_dictionary_output.md`](Doonie_Watch_Analytics_Projects_NLE/data_dictionary/data_dictionary_output.md)
+**Output Data Dictionary →** [data dictionary/data_dictionary_input.md](./data%20dictionary/data_dictionary_output.md)
 
 ```
 dim_customer ─────────────────────────── fact_txn_orders
