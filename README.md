@@ -106,7 +106,7 @@ Shopee Raw Exports (Excel)
 
 Before building the database, raw exports were profiled to understand structure, quality, and limitations.
 
-**Input Data Dictionary →** [`data dictionary/data_dictionary_input.md`](data_dictionary/data_dictionary_input.md)
+**Input Data Dictionary →** [data dictionary/data_dictionary_input.md](./data%20dictionary/data_dictionary_input.md)
 
 **Two primary input sources:**
 
