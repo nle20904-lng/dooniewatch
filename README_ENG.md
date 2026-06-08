@@ -1,4 +1,4 @@
-# 🕐 Doonie Watch — Shopee Data Analytics Project
+# 🕐 Doonie Watch — Shopee Data Analytics
 
 > **⚠️ IMPORTANT NOTICE**
 > **<span style="color:red">The data used in this project has been masked and is used with the explicit written permission and consent of the shop owner.</span>**
