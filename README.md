@@ -76,6 +76,8 @@ I was engaged as a **Freelance Data Consultant** across two domains:
 ### 2.2 Input data
  
 Full column definitions → [`data dictionary/data_dictionary_input.md`](./data%20dictionary/data_dictionary_input.md)
+
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/input_dictionary.jpg)
  
 | File | Columns | Contents |
 |---|---|---|
@@ -84,9 +86,16 @@ Full column definitions → [`data dictionary/data_dictionary_input.md`](./data%
  
 ### 2.3 Output Data
  
-Full schema → [`data dictionary/data_dictionary_output.md`](./data%20dictionary/data_dictionary_output.md)
- 
+Full Output Dictionary → [`data dictionary/data_dictionary_output.md`](./data%20dictionary/data_dictionary_output.md)
+
+ DB Diagrams
 ![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/DB_Diagrams.png)
+
+---
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/output_dictionary.jpg)
+
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/dashboard_dictionary.jpg)
+
  
 ### 2.4 Stored procedures
  
