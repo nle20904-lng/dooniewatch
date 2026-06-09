@@ -740,27 +740,12 @@ Quick reference mapping each Power BI dashboard to its source tables and busines
 
 ---
 
-## 📊 Business Overview Dashboard
-
-**Source tables:** `fact_monthly_profit_and_loss`, `fact_monthly_risk_management`, `fact_customer_monthly_metrics`, `fact_monthly_products_performance`
-
-| Metric                | Calculation                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Total Revenue         | `SUM(paid_revenue + pending_revenue)`                                                                                 |
-| Total Expense         | `SUM(all expense pl_codes)`                                                                                           |
-| Net Profit            | `Revenue - Unit Cost - Total Expense`                                                                                 |
-| Net Profit Margin     | `Net Profit / Revenue × 100`                                                                                          |
-| Conversion Rate       | `Completed Orders / Clicks × 100`                                                                                     |
-| Returned Order Rate   | `Returned Orders / Total Orders × 100`                                                                                |
-| Business Score        | Weighted score based on profitability, conversion performance, retention performance, and operational risk indicators |
-| Revenue MoM Growth    | `(Current Revenue - Previous Revenue) / Previous Revenue × 100`                                                       |
-| Net Profit MoM Growth | `(Current Net Profit - Previous Net Profit) / Previous Net Profit × 100`                                              |
-
----
-
-## 💰 Profit & Loss Dashboard
+## 💰 Profit & Loss Tracking
 
 **Source tables:** `fact_monthly_profit_and_loss`, `fact_daily_profit_and_loss`, `fact_annually_profit_and_loss`, `dim_profit_and_loss`
+
+> **May 2026 snapshot:** Total Revenue 344,910,000 VND · GPM 56.34% · Net Profit 70,108,450 VND · Net Profit Margin 20.33% · Revenue MoM ▲17.4% · Net Profit MoM ▲2.7%
+> **YTD 2026 (Jan–May):** Revenue 1,623M · Unit Cost 740.3M · Operating Expense 529.16M · Net Profit 353.5M
 
 | Metric                 | pl_code                                 | Type          |
 | ---------------------- | --------------------------------------- | ------------- |
@@ -780,6 +765,17 @@ Quick reference mapping each Power BI dashboard to its source tables and busines
 | Gross Profit Margin    | `(Revenue - Unit Cost) / Revenue × 100` | Derived       |
 | Net Profit             | `Revenue - Unit Cost - Total Expense`   | Derived       |
 | Net Profit Margin      | `Net Profit / Revenue × 100`            | Derived       |
+| Revenue MoM Growth     | `(Current Revenue - Previous Revenue) / Previous Revenue × 100` | Derived |
+| Net Profit MoM Growth  | `(Current Net Profit - Previous Net Profit) / Previous Net Profit × 100` | Derived |
+
+**Operating Expense Structure (May 2026):**
+
+| Fee Group     | Share  |
+| ------------- | ------ |
+| Platform Fee  | 80.69% |
+| Marketing Fee | 12.69% |
+| Shipping Fee  | 2.62%  |
+| Tax Fee       | ~4.00% |
 
 ---
 
@@ -787,25 +783,41 @@ Quick reference mapping each Power BI dashboard to its source tables and busines
 
 **Source tables:** `fact_customer_monthly_metrics`, `dim_customer_metrics`, `dim_customer`, `dim_city`
 
-| Metric                   | metric_code                                                                       | Description           |
-| ------------------------ | --------------------------------------------------------------------------------- | --------------------- |
-| Total Customers          | `is_active_customer`                                                              | Count where value = 1 |
-| New Customers            | `is_new_customer`                                                                 | Count where value = 1 |
-| Returning Customers      | `is_returning_customer`                                                           | Count where value = 1 |
-| Total Revenue            | `total_revenue`                                                                   | Sum of values         |
-| Total Orders             | `total_orders`                                                                    | Sum of values         |
-| Completed Orders         | `completed_orders`                                                                | Sum of values         |
-| Avg Order Value          | `avg_order_value`                                                                 | Average of values     |
-| Purchase Frequency       | `purchase_frequency`                                                              | Average of values     |
-| Days Since Last Order    | `days_since_last_order`                                                           | Average of values     |
-| Retention Rate           | `Returning Customers / Total Customers × 100`                                     | Derived               |
+> **May 2026 snapshot:** Total Customers 1,080 · New 980 (90.74%) · Returning 100 (9.26%) · Retention Rate 9.26% · New MoM ▼14.0% · Returning MoM ▲233.3%
+> **YTD 2026 avg retention rate:** 4.45%
+
+| Metric                   | metric_code                                                                        | Description           |
+| ------------------------ | ---------------------------------------------------------------------------------- | --------------------- |
+| Total Customers          | `is_active_customer`                                                               | Count where value = 1 |
+| New Customers            | `is_new_customer`                                                                  | Count where value = 1 |
+| Returning Customers      | `is_returning_customer`                                                            | Count where value = 1 |
+| Total Revenue            | `total_revenue`                                                                    | Sum of values         |
+| Total Orders             | `total_orders`                                                                     | Sum of values         |
+| Completed Orders         | `completed_orders`                                                                 | Sum of values         |
+| Avg Order Value          | `avg_order_value`                                                                  | Average of values     |
+| Purchase Frequency       | `purchase_frequency`                                                               | Average of values     |
+| Days Since Last Order    | `days_since_last_order`                                                            | Average of values     |
+| Retention Rate           | `Returning Customers / Total Customers × 100`                                      | Derived               |
 | New Customer Growth Rate | `(Current New Customers - Previous New Customers) / Previous New Customers × 100` | Derived               |
+
+**Top cities by customer volume (May 2026):**
+
+| City                  | New Customers | Returning | Retention Rate |
+| --------------------- | ------------- | --------- | -------------- |
+| TP. Hồ Chí Minh       | 410           | 20        | 4.65%          |
+| Tỉnh Đồng Nai         | 100           | 0         | 0.00%          |
+| Thành phố Cần Thơ     | 40            | 20        | 33.33%         |
+| Tỉnh Vĩnh Long        | 40            | 0         | 0.00%          |
+| Thành phố Đà Nẵng     | 30            | 0         | 0.00%          |
 
 ---
 
-## 🛒 E-Commerce Performance Dashboard
+## 🛒 Traffic & Conversion Performance
 
 **Source tables:** `fact_monthly_products_performance`, `dim_products_metrics`, `dim_brands`, `dim_category`
+
+> **May 2026 snapshot:** Views 1,530,620 (▼8.2%) · Clicks 70,670 (CTR MoM ▲2.2%) · Add to Cart 8,870 (▼14.2%) · Completed Orders 1,110 (▼6.7%)
+> **YTD 2026 monthly averages:** Views 1,720,706 · Clicks 76,008 · Add to Cart 9,806 · Completed Orders 1,194
 
 | Metric            | metric_code                        | Direction       |
 | ----------------- | ---------------------------------- | --------------- |
@@ -820,11 +832,30 @@ Quick reference mapping each Power BI dashboard to its source tables and busines
 | Clicks MoM Growth | Monthly growth of clicks           | Higher = Better |
 | Orders MoM Growth | Monthly growth of completed orders | Higher = Better |
 
+**Purchase funnel drop-off (May 2026):**
+
+| Stage            | Count  | Rate   |
+| ---------------- | ------ | ------ |
+| Total Clicks     | 70,670 | 100%   |
+| Add To Cart      | 8,870  | 12.55% |
+| Completed Orders | 1,110  | 1.57%  |
+
+**Traffic by product category (May 2026):**
+
+| Category              | Views   |
+| --------------------- | ------- |
+| Đồng hồ thời trang    | 690,690 |
+| Đồng hồ điện tử       | 549,250 |
+| Đồng hồ luxury        | 290,680 |
+
 ---
 
-## ⚠️ Order Fulfillment Risk & Loss Management Dashboard
+## ⚠️ Order Fulfillment Risk & Loss Management
 
 **Source tables:** `fact_monthly_risk_management`, `dim_monthly_risk_management_metrics`, `dim_payment_method`, `dim_brands`, `dim_city`
+
+> **May 2026 snapshot:** Canceled Orders 320 · Cancellation Rate 21.92% (▼21.0% MoM) · Returned Orders 30 · Return Rate 2.05% (▼50.0% MoM)
+> **YTD 2026 averages:** Avg Cancellation Rate 24.8% · Avg Return Rate 3.1% · Total Canceled 2,130 · Total Returned 260
 
 | Metric                    | metrics_code                                            | Description                        |
 | ------------------------- | ------------------------------------------------------- | ---------------------------------- |
@@ -845,9 +876,3 @@ Quick reference mapping each Power BI dashboard to its source tables and busines
 | Returned Order Rate       | `Returned Orders / Total Orders × 100`                  | Derived                            |
 | Refund Rate               | `Approved Refund Orders / Total Orders × 100`           | Derived                            |
 | Order Vulnerability Share | Share of canceled and returned orders by payment method | Derived                            |
-
-| Refund Request GMV | `refund_requested_gmv` | GMV under active refund review |
-| Disputed Refunds (Won) | `disputed_refund_orders` | Disputes resolved in seller's favor |
-| **Cancellation Rate** | `canceled_orders / total_orders` | Derived |
-| **Return Rate** | `returned_orders / total_orders` | Derived |
-| **Refund Rate** | `approved_refund_orders / total_orders` | Derived |
