@@ -70,21 +70,83 @@ Tôi đồng hành cùng dự án với tư cách **Cố vấn Dữ liệu Độ
 
 ---
 
-### 1. Theo dõi P&L (Lợi nhuận & Thua lỗ)
 
-Giúp giám sát chặt chẽ doanh thu, chi phí gốc, chi phí vận hành sàn và hiệu suất lợi nhuận tổng thể nhằm đưa ra các quyết định tối ưu hóa biên lợi nhuận một cách chính xác.
+## P&L Tracking
 
-### 2. Thu hút & Giữ chân Khách hàng
+Báo cáo này tái hiện cấu trúc bảng P&L theo tháng, giúp team thấy được doanh thu đang đến từ đâu, chi phí đang ăn vào lợi nhuận ở lớp nào, và biên lợi nhuận thực tế đang ở mức nào so với kỳ trước.
 
-Đo lường chi tiết lượng khách hàng mới và khách hàng cũ quay lại, tỷ lệ giữ chân và tốc độ tăng trưởng tệp khách để đánh giá mức độ trung thành thương hiệu cũng như hiệu quả chi phí sắm khách (CAC).
+**Doanh thu & giá vốn**
+- Total Revenue — doanh thu thuần từ đơn hoàn thành trong tháng, kèm tăng trưởng MoM
+- Total Unit Cost — tổng giá vốn hàng bán, phản ánh Gross Profit Margin (GPM)
 
-### 3. Hiệu suất Traffic & Chuyển đổi
+**Chi phí vận hành (Operating Expense)**
+- Platform Fee — phí sàn Shopee, chiếm tỷ trọng lớn nhất (~80% OpEx)
+- Shipping Fee — phí vận chuyển
+- Marketing Fee — chi phí quảng cáo trên sàn
+- Tax Fee — thuế phát sinh
 
-Theo dõi sát sao phễu hành vi từ Lượt xem → Clicks → Thêm vào giỏ hàng → Chuyển đổi đơn hàng, từ đó đo lường sức khỏe của phễu marketing và tối ưu ngân sách đấu thầu quảng cáo.
+**Lợi nhuận**
+- Net Profit — lợi nhuận ròng sau tất cả chi phí, kèm tăng trưởng MoM
+- Gross Profit Margin (%) & Net Profit Margin (%) theo từng tháng
 
-### 4. Quản trị Rủi ro Đơn hàng & Tổn thất Vận hành
+Nhìn vào đây, team có thể thấy ngay tháng nào biên gộp ổn nhưng biên ròng vẫn co lại vì platform fee tăng, hoặc doanh thu tăng trưởng tốt nhưng net profit không theo kịp do chi phí vận hành vượt ngưỡng.
 
-Bóc tách tỷ lệ hủy đơn, hoàn hàng và các điểm nghẽn trong khâu vận hành nhằm xác định đâu là nguyên nhân gây thất thoát doanh thu, từ đó cải thiện chất lượng đóng gói và bàn giao.
+---
+
+## Customer Acquisition & Retention
+
+Báo cáo này theo dõi chất lượng tệp khách hàng — không chỉ đếm số lượng mà phân tách rõ khách mới và khách quay lại, từ đó đánh giá được hiệu quả acquisition và mức độ gắn kết của người mua.
+
+**Chỉ số tổng quan**
+- Total Customers — tổng khách hàng trong tháng
+- New Customers — khách mua lần đầu, kèm tăng trưởng MoM
+- Returning Customers — khách mua lại, kèm tăng trưởng MoM
+- Retention Rate (%) — tỷ lệ giữ chân, so với trung bình năm
+
+**Phân tích chi tiết**
+- Tỷ lệ New vs Returning theo từng tháng (biểu đồ xu hướng)
+- MoM% tăng trưởng khách mới — phát hiện tháng nào acquisition đang chậm lại
+- Breakdown theo thành phố — New Customer Rate và Retention Rate theo từng tỉnh/thành
+
+Nhìn vào đây, team có thể thấy retention rate đang ở mức rất thấp (~4–9%) cho thấy phần lớn khách chỉ mua một lần, từ đó đặt câu hỏi cần ưu tiên giữ chân khách cũ hay tiếp tục đổ ngân sách kéo khách mới.
+
+---
+
+## Traffic & Conversion Performance
+
+Báo cáo này theo dõi toàn bộ phễu từ lúc khách nhìn thấy sản phẩm đến lúc hoàn tất đơn hàng, giúp xác định điểm thắt cổ chai đang xảy ra ở bước nào trong hành trình mua.
+
+**Chỉ số phễu**
+- Views — tổng lượt hiển thị sản phẩm, kèm MoM
+- Clicks — lượt click vào sản phẩm và CTR (Click-Through Rate), kèm MoM
+- Add To Cart — lượt thêm vào giỏ hàng, kèm MoM
+- Completed Orders — đơn hoàn thành, kèm MoM và Conversion Rate tổng
+
+**Phân tích sâu**
+- Drop-off Funnel — tỷ lệ rớt tại mỗi bước: từ 7,067 clicks chỉ còn 887 add-to-cart (12.55%) và 111 đơn hoàn thành (1.57%)
+- Traffic Distribution by Product Category — danh mục nào đang kéo nhiều traffic nhất
+- Brand Matrix (CTR vs Conversion Rate) — xác định thương hiệu nào có traffic cao nhưng convert kém, và ngược lại
+
+Nhìn vào đây, team biết ngay vấn đề nằm ở đâu — nếu CTR thấp thì cần tối ưu ảnh và tiêu đề sản phẩm; nếu add-to-cart cao nhưng convert thấp thì vấn đề nằm ở trang checkout hoặc giá.
+
+---
+
+## Order Fulfillment Risk & Loss Management
+
+Báo cáo này theo dõi các rủi ro sau khi đơn được đặt — hủy đơn và hoàn trả — và phân tích theo nhiều chiều để tìm ra nhóm sản phẩm, phương thức thanh toán hay khu vực địa lý nào đang gây tổn thất nhiều nhất.
+
+**Chỉ số tổng quan**
+- Canceled Orders — số đơn hủy trong tháng và Cancellation Rate (%), so với trung bình năm
+- Returned Orders — số đơn hoàn trả và Returned Order Rate (%), so với trung bình năm
+
+**Phân tích chi tiết**
+- Fulfillment Risk Trend — xu hướng cancellation rate và return rate theo tháng, đặt cạnh tổng đơn
+- Breakdown by Product Category — danh mục nào có tỷ lệ hủy/hoàn cao bất thường
+- Brand Performance Risk Matrix — scatter plot xác định thương hiệu nào vừa có cancellation rate cao vừa có return rate cao
+- Order Vulnerability by Payment Method — phương thức thanh toán nào (COD, SPayLater, v.v.) đi kèm với tỷ lệ hủy cao nhất
+- Distribution by City — khu vực địa lý nào đang có cancellation rate vượt mức trung bình
+
+Nhìn vào đây, team không chỉ biết "bao nhiêu đơn bị hủy" mà hiểu được nguyên nhân gốc rễ — ví dụ COD đang chiếm tỷ lệ hủy lớn nhất cho thấy cần xem xét chính sách thanh toán, hoặc một danh mục cụ thể có return rate cao bất thường gợi ý vấn đề về chất lượng sản phẩm hay mô tả sai.
 
 ---
 
