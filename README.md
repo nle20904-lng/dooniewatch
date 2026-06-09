@@ -8,9 +8,9 @@
 ## 📌 Table of Contents
 
 1. [1. Background & Context](#1-background--context)
-2. [2. Process — Step by Step](#2-process---step-by-step)
+2. [2. Process - Step by Step](#2-process---step-by-step)
 3. [3. Insight Deep Dive](#3-insight-deep-dive)
-4. [4. Achievements (Jan 2025 → May 2026)](#4-achievements-jan-2025---may-2026)
+4. [4. Achievements (Jan 2025 - May 2026)](#4-achievements-jan-2025---may-2026)
 5. [5. Value Gained](#5-value-gained)
 
 ---
@@ -25,6 +25,7 @@
 
 Doonie Watch is a watch retailer operating on Shopee Vietnam for over 2 years, selling fashion, digital, and luxury watches across multiple brands (Casio, Movado, DW, Longines, and others).
 
+![image alt]()
 ### The Problem — Before January 2025
 
 Prior to this engagement, the shop owner had no structured data management. Their only visibility came from Shopee's native summary screens. As a result:
@@ -65,7 +66,7 @@ I was engaged as a **Freelance Data Consultant** across two domains:
  
 ---
  
-## 2. Process — Step by Step
+## 2. Process - Step by Step
  
 ### 2.1 Data pipeline
  
@@ -242,7 +243,7 @@ Both sit above the avg conversion line in the Brand CTR × Conversion Matrix. DW
  
 ---
  
-## 4. Achievements (Jan 2025 → May 2026)
+## 4. Achievements (Jan 2025 - May 2026)
  
 | Metric | Result |
 |---|---|
