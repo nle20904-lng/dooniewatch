@@ -1,7 +1,7 @@
 # 🕐 Doonie Watch — Phân Tích Dữ Liệu Sàn Thương Mại Điện Tử Shopee
 
 > **⚠️ LƯU Ý QUAN TRỌNG**
-> **Toàn bộ dữ liệu sử dụng trong dự án này đã được làm mờ (masked) và được sự cho phép, đồng ý bằng văn bản từ chủ gian hàng.**
+> **Toàn bộ dữ liệu sử dụng trong dự án này đã được thay đổi và được sự cho phép, đồng ý bằng văn bản từ chủ gian hàng.**
 
 ---
 
