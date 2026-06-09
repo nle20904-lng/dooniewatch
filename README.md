@@ -7,11 +7,11 @@
 
 ## 📌 Table of Contents
 
-1. [Background & Context](#1-background--context)
-2. [Process - Step by Step](#2-process---step-by-step)
-3. [Insight Deep Dive](#3-insight-deep-dive)
-4. [Achievements (Jan 2025 - May 2026)](#4-achievements-jan-2025---may-2026)
-5. [Value Gained](#5-value-gained)
+1. [1. Background & Context](#1-background--context)
+2. [2. Process - Step by Step](#2-process---step-by-step)
+3. [3. Insight Deep Dive](#3-insight-deep-dive)
+4. [4. Achievements (Jan 2025 - May 2026)](#4-achievements-jan-2025---may-2026)
+5. [5. Value Gained](#5-value-gained)
 
 ---
 
