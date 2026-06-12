@@ -17,7 +17,7 @@
 
 ## 1. Background & Context
 
-**🔗 Demo:** *(link to Power BI report)*
+**🔗 Demo:** *([link to Power BI report](https://app.powerbi.com/view?r=eyJrIjoiOWFkOGQ5YTgtYjRhMi00YzQ4LThjZTMtM2Q5ZjdhNWExNmMyIiwidCI6ImQ2ZDEzZTBlLTdjYTAtNDNkNC05OTY1LTQyZDM4ZWU1M2RkYSIsImMiOjEwfQ%3D%3D))*
 
 > <span style="color:red">**⚠️ NOTE: All data has been masked and used with the explicit permission and written consent of the shop owner.**</span>
 
