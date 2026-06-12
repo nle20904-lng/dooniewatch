@@ -35,14 +35,19 @@ Prior to this engagement, the shop owner had no structured data management. Thei
 - No way to track profit, cost structure, or margins
 - Operational problems (high cancellation rate) existed but were invisible
 - Decisions were made on intuition — revenue stagnated at a low baseline
+- **Net Profit Margin near 0%** for several consecutive months despite Gross Margin reaching 67–73% — marketing costs consumed all profit
+- **Retention Rate = 0%** across all provinces — no returning customers, no retention strategy in place
+- **Conversion rate at only 1.23%** — 25,920 clicks resulted in just 320 completed orders
+- **Cancellation Rate sustained at 20–30%** over 8 months — Longines brand approached 100%, with anomalies in certain provinces and payment methods going undetected
+- **Revenue declined 33%** from June to year-end with no diagnosis or corrective action taken
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/before2025_1.png)
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/before2025_2.png)
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/before2025_3.png)
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/before2025_4.png)
 
 ### What the Owner Needed
 
@@ -141,7 +146,7 @@ This report recreates a standard P&L structure on a monthly basis, helping the t
 
 This report allows the team to immediately spot months where gross margin holds steady but net margin shrinks due to rising platform fees, or where revenue grows but net profit doesn't follow because operating costs exceed the threshold.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/p%26l_dashboard.png)
 
 ---
 
@@ -162,7 +167,7 @@ This report tracks the quality of the customer base — not just headcount, but 
 
 With this report, the team can observe that retention is sitting at a low level (~4–9%), meaning most customers only buy once, which raises the question of whether to prioritize retaining existing customers or continuing to invest in new customer acquisition.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/customer_accquisition_dashboard.png)
 
 ---
 
@@ -183,7 +188,7 @@ This report tracks the full funnel from product impressions to completed orders,
 
 This report tells the team exactly where the problem lies — low CTR points to product images and titles needing work; high add-to-cart but low conversion suggests an issue at checkout or with pricing.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/traffic_conversion_dashboard.png)
 
 ---
 
@@ -204,7 +209,7 @@ This report monitors post-order risks — cancellations and returns — and brea
 
 Rather than simply reporting how many orders were canceled, this dashboard helps the team understand root causes — for example, COD accounting for the largest share of cancellations suggests a need to revisit payment policies, while an unusually high return rate in a specific category may point to product quality issues or misleading descriptions.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/risk_management.png)
  
 ---
  
@@ -214,7 +219,7 @@ Rather than simply reporting how many orders were canceled, this dashboard helps
 
 COD = ~70% of orders but 26.6% cancellation rate — 3× higher than prepaid. 320 cancelled orders in May 2026. Return rate at 2.05% with upward MoM trend. Concentrated in Cà Mau and Vĩnh Long (longer delivery windows inflate cancellation risk).
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/insight1.png)
 
 **Action →** Voucher campaign to migrate COD buyers to ShopeePay. Target: 70% → 55% COD share in 3 months. Hold paid acquisition in Cà Mau/Vĩnh Long until COD verification is live.
 
@@ -224,7 +229,7 @@ COD = ~70% of orders but 26.6% cancellation rate — 3× higher than prepaid. 32
 
 Platform fees = 80.7% of opex. Total revenue 344.9M but net profit only 70.1M (~20% net margin). Margin compression tracks directly to ad spend decisions, not product issues.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/insight2.png)
 
 **Action →** Monthly campaign audit — pause below-avg CTR-to-conversion ads, reallocate budget to Casio.
 
@@ -234,7 +239,7 @@ Platform fees = 80.7% of opex. Total revenue 344.9M but net profit only 70.1M (~
 
 Casio (electronic watches) spikes in conversion rate in September (military service list announcement) and February (post-Tết / conscription intake). These are predictable demand triggers — budget needs to be prepared 4–6 weeks in advance. Conversely, April–August shows high views but weak conversion despite traffic volume.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/insight3.png)
 
 **Action →** Increase Casio ad budget 20–30% starting August and January. During April–August: reduce Casio bids, shift budget toward fashion watches to prepare for year-end peak.
 
@@ -244,7 +249,7 @@ Casio (electronic watches) spikes in conversion rate in September (military serv
 
 Fashion watches (DW, Longines, Movado) only convert well during high gift-demand periods: year-end, Tết, Valentine's Day, Women's Day (8/3). April–August: high traffic but low conversion — users are browsing without purchase intent. DW specifically shows a CTR-to-conversion gap suggesting a price or trust issue.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/insight4.png)
 
 **Action →** April–August: switch to content nurturing (wishlists, reviews) instead of conversion ads. A/B test DW before year-end peak: price anchor vs bundle offer.
 
@@ -254,7 +259,7 @@ Fashion watches (DW, Longines, Movado) only convert well during high gift-demand
 
 Returning customers +233% MoM. Retention at 9.26% in May 2026 — up from 4.45% YTD avg. Customer volume spikes clearly around Tết, year-end holidays, and a mid-year repurchase window. HCMC concentration (~85% of customers) = single-market risk. Đồng Nai shows organic demand with zero marketing spend.
 
-![image alt]()
+![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/insight5.png)
 
 **Action →** Run a small paid acquisition test in Đồng Nai before year-end peak. Post-purchase sequence: D+3 review request → D+30 accessory voucher → D+60 re-engagement.
  
