@@ -25,8 +25,6 @@
 
 Doonie Watch is a watch retailer operating on Shopee Vietnam for over 2 years, selling fashion, digital, and luxury watches across multiple brands (Casio, Movado, DW, Longines, and others).
 
-![image alt](https://github.com/nle20904-lng/Doonie_Watch_Analytics_Projects_NLE/blob/main/images/shop.jpg)
-
 ### The Problem — Before January 2025
 
 Prior to this engagement, the shop owner had no structured data management. Their only visibility came from Shopee's native summary screens. As a result:
