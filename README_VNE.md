@@ -17,7 +17,7 @@
 
 ## 1. Bối Cảnh & Vấn Đề
 
-[**🔗 Báo cáo Demo)**](https://app.powerbi.com/view?r=eyJrIjoiOWFkOGQ5YTgtYjRhMi00YzQ4LThjZTMtM2Q5ZjdhNWExNmMyIiwidCI6ImQ2ZDEzZTBlLTdjYTAtNDNkNC05OTY1LTQyZDM4ZWU1M2RkYSIsImMiOjEwfQ%3D%3D)
+[**🔗 Báo cáo Power BI Demo**](https://app.powerbi.com/view?r=eyJrIjoiOWFkOGQ5YTgtYjRhMi00YzQ4LThjZTMtM2Q5ZjdhNWExNmMyIiwidCI6ImQ2ZDEzZTBlLTdjYTAtNDNkNC05OTY1LTQyZDM4ZWU1M2RkYSIsImMiOjEwfQ%3D%3D)
 
 ### Khách hàng là ai?
 
